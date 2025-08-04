@@ -1,0 +1,130 @@
+/* Hero Section */
+.portfolio-hero-section {
+  background-image: linear-gradient(90deg, #3564ff, #000000), var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  height: 100vh; /* Default height for larger screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.portfolio-hero-text {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+/* Screen sizes between 992px and 1439px */
+@media (max-width: 1439px) and (min-width: 992px) {
+  .portfolio-hero-section {
+    height: 80vh; /* Reduced height for medium-large screens */
+  }
+  .portfolio-hero-text {
+    font-size: 40px; /* Proportional scaling */
+  }
+}
+
+/* Screen sizes between 576px and 991px */
+@media (max-width: 991px) and (min-width: 576px) {
+  .portfolio-hero-section {
+    height: 60vh; /* Further reduced height for tablets */
+  }
+  .portfolio-hero-text {
+    font-size: 30px; /* Proportional scaling */
+  }
+}
+
+/* Mobile screens 576px and below */
+@media (max-width: 576px) {
+  .portfolio-hero-section {
+    height: 50vh; /* Reduced height for mobile screens */
+  }
+  .portfolio-hero-text {
+    font-size: 16px;
+  }
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  margin-bottom: 50px;
+}
+
+.portfolio-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+/* Card Styling */
+.portfolio-card {
+  border: none;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: transparent;
+  position: relative;
+}
+
+/* Image Styling */
+.portfolio-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Text Overlay with Blur */
+.portfolio-text {
+  font-family: 'Sora', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.05); /* very light transparent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  border-radius: 0 0 20px 20px;
+  z-index: 2;
+}
+
+/* Responsive Text Sizes */
+@media (max-width: 992px) {
+  .portfolio-text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 440px) {
+  .portfolio-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .portfolio-text {
+    font-size: 13px;
+  }
+}

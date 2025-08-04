@@ -1,0 +1,186 @@
+/* Hero Section */
+.service-hero-section {
+  background-image: linear-gradient(90deg, #3564ff, #000000), var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  height: 100vh; /* Default height for larger screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  opacity: 0.8;
+}
+
+.service-hero-text {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+/* Screen sizes between 992px and 1439px */
+@media (max-width: 1439px) and (min-width: 992px) {
+  .service-hero-section {
+    height: 80vh; /* Reduced height for medium-large screens */
+  }
+  .service-hero-text {
+    font-size: 40px; /* Proportional scaling */
+  }
+}
+
+/* Screen sizes between 576px and 991px */
+@media (max-width: 991px) and (min-width: 576px) {
+  .service-hero-section {
+    height: 60vh; /* Further reduced height for tablets */
+  }
+  .service-hero-text {
+    font-size: 30px; /* Proportional scaling */
+  }
+}
+
+/* Mobile screens 576px and below */
+@media (max-width: 576px) {
+  .service-hero-section {
+    height: 50vh; /* Reduced height for mobile screens */
+  }
+  .service-hero-text {
+    font-size: 16px;
+  }
+}
+
+/* Services Section */
+.service-wrapper {
+  background: #f8f9fa;
+  font-family: sans-serif;
+  padding: 60px 0;
+}
+
+.services-section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.services-section-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-card {
+  background-color: #ffffff;
+  border-radius: 35px;
+  padding: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.services-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.services-description {
+  font-family: "Sora", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-top: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+  color: #333;
+}
+
+.services-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* iPad / Tablet View */
+@media (max-width: 1300px) {
+  .services-heading {
+    font-size: 40px;
+  }
+ .services-section-title {
+    font-size: 80px;
+  }
+  .services-description {
+    font-size: 18px;
+  }
+
+  .services-card {
+    padding: 40px;
+  }
+
+  .services-image {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services-heading {
+    font-size: 35px;
+  }
+ .services-section-title {
+    font-size: 80px;
+  }
+  .services-description {
+    font-size: 16px;
+  }
+
+  .services-card {
+    padding: 40px;
+  }
+
+  .services-image {
+    max-width: 200px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .services-section {
+    width: 90%;
+  }
+  .services-section-title {
+    font-size: 50px;
+  }
+
+  .services-heading {
+    font-size: 16px;
+  }
+
+  .services-description {
+    font-size: 10px;
+  }
+
+  .services-image {
+    max-width: 100px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .services-section-title{
+    font-size: 25px;
+  }
+  .services-heading {
+    font-size: 30px;
+  }
+
+  .services-description {
+    font-size: 15px;
+  }
+
+  .services-image {
+    max-width: 180px;
+  }
+}

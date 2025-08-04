@@ -1,0 +1,131 @@
+.demo-section {
+  width: 80%;
+  margin: auto;
+  padding: 40px 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.demo-card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.demo-title {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.demo-subtitle {
+  font-family: 'Sora', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 80px;
+}
+
+.demo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.demo-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.demo-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.demo-field input {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+  padding: 10px 0;
+  background: transparent;
+  margin-bottom: 10px;
+}
+
+.full {
+  width: 100%;
+}
+
+.submit-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-wrap button {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px 30px;
+  border: 1px solid #000;
+  border-radius: 12px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-wrap button:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+
+@media (max-width: 768px) {
+  .demo-section {
+    width: 95%;
+    padding: 20px 0;
+  }
+
+  .demo-card {
+    padding: 20px;
+  }
+
+  .demo-title {
+    font-size: 28px;
+  }
+
+  .demo-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .demo-form {
+    gap: 20px;
+  }
+
+  .demo-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .demo-field input {
+    font-size: 16px;
+    padding: 8px 0;
+    margin-bottom: 6px;
+  }
+
+  .submit-wrap button {
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 8px;
+  }
+
+  
+}
